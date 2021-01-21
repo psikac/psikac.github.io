@@ -1,7 +1,4 @@
-<?php
 
-
-?>
 
 <!DOCTYPE html>
 <html>
@@ -35,6 +32,16 @@
                 >
                 <button class="submit-button" id="submit" type="submit" name="submit">Unos</button>
             </form>
+        </section>
+        <section class="user-info">
+            <h2 id="greeting"></h2>
+            <button id="delete-cookie" class="submit-button cookie">Izbriši cookie</button>
+            <h2>Fingerprint dobiven korištenjem canvas funkcije</h2>
+            <h2 id="user-identificator"></h2>
+            <h2>Fingerprint dobiven bez canvas funkcije, ali sa murmur3 hash funkcijom</h2>
+            <h2 id="user-identificator-mm3"></h2>
+            <h2>Fingerprint dobiven bez canvas funkcije, ali sa Java hashcode hashing funkcijom</h2>
+            <h2 id="user-identificator-java"></h2>
         </section>
 
     </body>

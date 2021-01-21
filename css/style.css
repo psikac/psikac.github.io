@@ -33,6 +33,10 @@ body{
     transition: 0.4s;
     font-weight: 700;
 }
+.submit-button.cookie
+{
+    width: 300px;
+}
 
 .submit-button:hover{
     background-color: #b695c1;
@@ -57,4 +61,15 @@ body{
 .form-label
 {
     width: 100%;
+}
+
+.user-info
+{
+    font-size: 13px;
+    text-align: center;
+}
+
+#greeting{
+    font-family: "Playfair Display";
+    color: #ff5061;
 }

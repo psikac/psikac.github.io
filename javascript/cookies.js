@@ -4,15 +4,23 @@ $(document).ready(function (){
     startTime= performance.now();
     document.addEventListener('visibilitychange', logVisit);
     var button = document.getElementById("submit");
+    var cookieButton = document.getElementById("delete-cookie");
     checkCookie();
-    button.onclick=function(){setCookie("ime", $('#ime').val(),100)};
-
+    button.onclick=function(){
+        setCookie("ime", $('#ime').val(),100)
+    };
+    cookieButton.onclick = function(){
+        document.cookie = "ime=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        window.location.reload();
+    }
 
     var withCanvasDrawing = new Fingerprint({canvas: true});
     var withoutCanvasDrawing = new Fingerprint({canvas: false});
     var javaHashFunction = new Fingerprint({hasher: javaHashCode});
 
-    console.log(withCanvasDrawing.get());
+    document.getElementById("user-identificator").innerHTML = withCanvasDrawing.get();
+    document.getElementById("user-identificator-mm3").innerHTML = withoutCanvasDrawing.get();
+    document.getElementById("user-identificator-java").innerHTML = javaHashFunction.get();
 })
 
 
@@ -45,7 +53,11 @@ function getCookie(cname) {
 function checkCookie() {
     var user = getCookie("ime");
     if (user != "") {
-        console.log("Pozdrav, " + user);
+        document.getElementById("greeting").innerHTML = "Pozdrav, " + user;
+    }
+    else
+    {
+        document.getElementById("delete-cookie").hidden=true;
     }
 }
 
