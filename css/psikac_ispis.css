@@ -1,0 +1,7 @@
+@media print
+{
+    .header,.topnav,.footer, img, a, video, iframe, audio
+    {
+        display: none;
+    }
+}

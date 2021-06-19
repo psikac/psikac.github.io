@@ -1,0 +1,144 @@
+@media only screen and (max-width:1024px)
+{
+    body
+    {
+        font-family: "Open Sans", sans-serif;
+    }
+    /*HEADER*/
+    .header
+    {
+        font-family: 'Oswald', sans-serif;
+    }
+
+    .header .search-container 
+    {
+        float: none;
+    }
+
+    .header input[type=text], .header .search-container button, .button_exit, .odjava-link
+    {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+
+    .odjava-link
+    {
+        background-color: rgb(145,68,68);
+    }
+
+    .odjava-link:hover
+    {
+        background-color: rgb(201, 73, 73);
+    }
+
+    .header .search-container button:hover
+    {
+        background: rgb(201, 73, 73);
+    }
+
+    .header input[type="text"]
+    {
+        background-color: rgb(145,68,68);
+    }
+    /*NAVIGATION BAR*/
+    .topnav
+    {
+        background-color: rgb(145,68,68);
+    }
+    .topnav a
+    {
+        width: 100%;
+        text-align: left;
+    }
+    .topnav a:hover
+    {
+        background-color: rgb(201, 73, 73);
+        color: white;
+    }
+    /*MAIN*/
+    .hero-section::after
+    {
+        background-image: url(../multimedija/background_responsive.jpeg);
+    }
+
+    /*TABLE*/
+    th
+    {
+        background-color: rgb(68, 145, 141);    
+    }
+
+    th:hover
+    {
+        background-color:rgb(151, 231, 227);
+        color: black;
+    }
+    /*FOOTER*/
+    .footer
+    {
+        background-color: rgb(145,68,68);
+    }
+
+    .text-container
+    {
+        width:50% 
+    }
+
+    hr
+    {
+        width: 250px;
+    }
+
+    .col-25, .col-75, .formEntry 
+    {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .form-container
+    {
+        width: 80%;
+    }
+
+    .form-container .form-button
+    {
+        background-color: rgb(201, 73, 73);
+        color: white;
+    }
+
+    .checkbox-container
+    {
+        display:block
+    }
+
+    .button-container
+    {
+        width: 100%;
+    }
+    /*MEDIA*/
+    .video-container
+    {
+        width: 100%;
+        padding:0;
+    }
+
+    .main-content h4
+    {
+        font-family: 'Oswald', sans-serif;
+        font-size: 2em;
+    }
+
+    .video-container-iframe
+    {
+        width: 100%;
+        padding:0;
+    }
+
+    audio
+    {
+        background-color: rgb(151, 231, 227);
+    }
+}

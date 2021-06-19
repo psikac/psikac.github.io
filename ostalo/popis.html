@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <title>Popis</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Patrik Noah Šikač">
+        <meta name="description" content="Stranica sa popisom za zadaću 1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat:300,900|Open+Sans|Oswald|Roboto:400,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="icon" href="../multimedija/favicon-16x16.png" type="image/png" sizes="16x16">
+        <link href="../css/psikac_css.css" rel="stylesheet" media="screen">
+        <link href="../css/psikac_responsive.css" rel="stylesheet" media="screen">
+        <link rel="stylesheet" media="print" href="../css/psikac_ispis.css" />
+        
+    <style>
+        caption
+        {
+            font-size: 1.5em;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+            margin-bottom: 50px;
+        }
+        #tablica
+        {
+            background-color: rgb(110, 110, 110);
+            border-collapse: collapse;
+            margin-bottom: 50px;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <a href="../index.html"><img src="../multimedija/logo_teacup.png" width="85" height="95" alt="logo"></a>
+                <h1>POPIS</h1>
+                <div class="odjava-link">
+                    <a href="obrasci/prijava.html">Odjavi se</a>
+                </div> 
+
+                <div class=search-container>
+                    <form method="POST" action="http://barka.foi.hr/WebDiP/2019/materijali/zadace/ispis_forme.php">
+                        <input type="text" placeholder="Pretraži..." name="search">
+                        <button type="submit"><i class="material-icons">search</i></button>
+                    </form>
+                </div>
+
+            </header>
+             <div class="topnav">
+                <a href="../index.html">Početna stranica</a>
+                <a href="../obrasci/prijava.html">Prijava</a>
+                <a href="../obrasci/registracija.html">Registracija</a>
+                <a href="../obrasci/obrazac.html">Obrazac</a>
+                <a href="multimedija.html">Multimedija</a>
+                <a href="popis.html">Popis</a>
+                <a href="../era.html">ERA model</a>
+                <a href="../navigacijski_dijagram.html">Navigacijski dijagram</a>
+            </div>
+            <section class="main" style="overflow-x: auto;">
+                <div class="main-content" >
+                    <div class="table-wrapper" >
+                        <table id="tablica">
+                            <caption>Popis</caption>
+                            <thead>
+                                <tr>
+                                    <th>Naziv dobavljača</th>
+                                    <th>Web adresa dobavljača</th>
+                                    <th>Adresa dobavljača</th>
+                                    <th>Broj telefona</th>
+                                    <th>Datum dospijeća</th>
+                                    <th>Naziv čaja</th>
+                                    <th>Broj paketića čaja</th>
+                                    <th>Boja čaja</th>
+                                    <th>Opis čaja</th>
+                                    <th>Vrsta pakiranja</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-body">
+                                <tr>
+                                    <td>Lidl</td>
+                                    <td>https://www.lidl.hr</td>
+                                    <td>Gospodarska ul. 54, 42000, Varaždin</td>
+                                    <td>046/789-121</td>
+                                    <td>22/04/2020 08:00 am</td>
+                                    <td>Lord Nelson's Zeleni čaj</td> 
+                                    <td>15</td>
+                                    <td>Zelena</td>
+                                    <td>Jak, smirujući, ljekoviti</td>
+                                    <td>Vrećice, piramide</td>
+                                </tr>
+                                <tr>
+                                    <td>Agristar</td>
+                                    <td>https://agristar.hr</td>
+                                    <td> Ul. bana Josipa Jelačića 158, 31220, Višnjevac</td>
+                                    <td colspan="2">N/A</td>
+                                    <td>Menta 100% prirodni čaj</td> 
+                                    <td>40</td>
+                                    <td>Tamno zelena</td>
+                                    <td>Smirujući, ljekoviti, eko</td>
+                                    <td>Vrećice, lišće, kompresirani</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">Franck</td>
+                                    <td rowspan="2">https://www.franck.eu/hr/</td>
+                                    <td rowspan="2">Franck d.d., Vodovodna 20, Zagreb</td>
+                                    <td rowspan="2">0800/334-433</td>
+                                    <td>02/04/2020 09:30 am</td>
+                                    <td>Franck čaj - Jagoda i Vanilija</td> 
+                                    <td rowspan="2">20</td>
+                                    <td>Crveno</td>
+                                    <td>Voćni, umirujući</td>
+                                    <td rowspan="2">Vrećice, instant čaj</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>06/05/2020 09:30 am</td>
+                                    <td>Franck čaj - Kamilica</td> 
+                                    <td>Žuta</td>
+                                    <td>Umirujući, ljekoviti</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>FOI</td>
+                                    <td>https://www.foi.unizg.hr</td>
+                                    <td>Pavlinska ul. 2, 42000, Varaždin</td>
+                                    <td>042/390-804</td>
+                                    <td>25/06/2020 07:00 am</td>
+                                    <td>Misteriozni čaj</td> 
+                                    <td>20</td>
+                                    <td>Crvena</td>
+                                    <td colspan="2">N/A</td>
+                                </tr>
+                                <tr>
+                                    <td>Podravka</td>
+                                    <td>https://cajevi.podravka.hr</td>
+                                    <td>Ul. Ante Starčevića 32, 48000, Koprivnica</td>
+                                    <td>048/651-144</td>
+                                    <td>25/05/2020 11:00 am</td>
+                                    <td>Limun i limeta</td> 
+                                    <td>15</td>
+                                    <td>Žuto-zelena</td>
+                                    <td>Voćni, smirujući, osvježavajući</td>
+                                    <td>Vrećice, piramide</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>  
+                </div>
+            </section>
+            <footer class="footer">
+                <div>
+                    <p>Patrik Noah Šikač</p>
+                    <p>&copy;2020</p>
+                    <p><a href="mailto:psikac@foi.hr">psikac@foi.hr</a></p>
+                </div>
+                <div>
+                    <a href="http://validator.w3.org/check?uri=http://barka.foi.hr/WebDiP/2019/zadaca_01/psikac/ostalo/popis.html">
+                        <img src="../multimedija/HTML5.png" alt="html5">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://jigsaw.w3.org/css-validator/validator?uri=http://barka.foi.hr/WebDiP/2019/zadaca_01/psikac/ostalo/popis.html">
+                        <img src="../multimedija/CSS3.png" alt="css">
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

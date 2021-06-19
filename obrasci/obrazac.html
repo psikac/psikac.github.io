@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <title>Obrazac</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Patrik Noah Šikač">
+        <meta name="description" content="Stranica sa obrascom za zadaću 1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat:300,900|Open+Sans|Oswald|Roboto:400,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="icon" href="../multimedija/favicon-16x16.png" type="image/png" sizes="16x16">
+        <link href="../css/psikac_css.css" rel="stylesheet" media="screen">
+        <link href="../css/psikac_responsive.css" rel="stylesheet" media="screen">
+        <link rel="stylesheet" media="print" href="../css/psikac_ispis.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <a href="../index.html"><img src="../multimedija/logo_teacup.png" width="85" height="95" alt="logo"></a>
+                <h1>OBRAZAC</h1>
+                <div class="odjava-link">
+                    <a href="obrasci/prijava.html">Odjavi se</a>
+                </div> 
+                
+                <div class=search-container>
+                    <form method="POST" action="http://barka.foi.hr/WebDiP/2019/materijali/zadace/ispis_forme.php">
+                        <input type="text" placeholder="Pretraži..." name="search">
+                        
+                        <button type="submit"><i class="material-icons">search</i></button>
+                       
+                    </form>
+                </div>
+                  
+            </header>
+             <div class="topnav">
+                <a href="../index.html">Početna stranica</a>
+                <a href="prijava.html">Prijava</a>
+                <a href="registracija.html">Registracija</a>
+                <a href="obrazac.html">Obrazac</a>
+                <a href="../ostalo/multimedija.html">Multimedija</a>
+                <a href="../ostalo/popis.html">Popis</a>
+                <a href="../era.html">ERA model</a>
+                <a href="../navigacijski_dijagram.html">Navigacijski dijagram</a>
+            </div>
+            <section class="main">
+                <div class="main-content">
+                    <div class="form-container">
+                        <h2>Obrazac</h2>
+                        <form  name="obrazac" id="obrazac" method="POST" action="http://barka.foi.hr/WebDiP/2019/materijali/zadace/ispis_forme.php">
+                            <fieldset class="formElement">
+                                <legend>Dobavljač</legend>
+                                    <div class="row">
+                                        <div class="col-25">
+                                            <label for="naziv">Naziv dobavljača:</label>
+                                        </div>
+                                        <div class="col-75">
+                                            <input class="form-entry" id="naziv" name="naziv" type="text" autofocus required="required" >
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-25">
+                                            <label for="webAddr">Web adresa dobavljača:</label>
+                                        </div>
+                                        <div class="col-75">
+                                            <input class="form-entry" id="webAddr"  name="webAddr" type="url" required="required">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-25">
+                                            <label for="adresa">Adresa dobavljača:</label>
+                                        </div>
+                                        <div class="col-75">
+                                            <input class="form-entry" id="adresa" name="adresa" type="text" required="required">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-25">
+                                            <label for="brojTel">Broj telefona:</label>
+                                        </div>
+                                        <div class="col-75">
+                                            <input class="form-entry" id="brojTel" name="brojTel" type="tel" required="required" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="043-125-258">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-25">
+                                            <label for="datumDospijeca">Datum dospijeća:</label>
+                                        </div>
+                                        <div class="col-75">
+                                            <input class="form-entry" id="datumDospijeca"  name="datumDospijeca" type="datetime-local" required="required">
+                                        </div>
+                                    </div>      
+                            </fieldset>
+                            <fieldset class="formElement">
+                                <legend>Informacije o čaju</legend>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="nazivČaja">Naziv čaja:</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <input class="form-entry" id="nazivČaja"  name="nazivČaja" type="text" required="required">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="brojPaketaČaja">Broj paketića čaja:</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <input class="form-entry" id="brojPaketaČaja" name="brojPaketaČaja" type="number" required="required" min="10" max="40">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="bojaČaja">Boja čaja:</label> 
+                                    </div>
+                                    <div class="col-75">
+                                        <input class="bojaČaja" id="bojaČaja" name="bojaČaja" type="color">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label>Opis čaja:</label><br>
+                                    </div>
+                                    <div class="col-75">
+                                        <div class="checkbox-container">
+                                            <input type="checkbox" id="čaj1" name="čaj1" value="voćni" checked>
+                                            <label for="čaj1">Voćni</label>
+                                        </div>
+                                        <div class="checkbox-container">
+                                            <input type="checkbox" id="čaj2" name="čaj2" value="smirujuci" checked>
+                                            <label for="čaj2">Umirujući</label>
+                                        </div>
+                                        <div class="checkbox-container">
+                                            <input type="checkbox" id="čaj3" name="čaj3" value="jaki">
+                                            <label for="čaj3">Jak</label>
+                                        </div>
+                                        <div class="checkbox-container">
+                                            <input type="checkbox" id="čaj4" name="čaj4" value="osvjezavajuci">
+                                            <label for="čaj4">Osvježavajući</label>
+                                        </div>
+                                        <div class="checkbox-container">
+                                            <input type="checkbox" id="čaj5" name="čaj5" value="ljekoviti">
+                                            <label for="čaj5">Ljekoviti</label>
+                                        </div>
+                                        <div class="checkbox-container">
+                                            <input type="checkbox" id="čaj6" name="čaj6" value="egzoticni">
+                                            <label for="čaj6">Egzotični</label>
+                                        </div>
+                                        <div class="checkbox-container">
+                                            <input type="checkbox" id="čaj7" name="čaj7" value="eko">
+                                            <label for="čaj7">Eko</label>
+                                        </div>   
+                                    </div>
+                                </div>    
+                                <div class="row">
+                                    <label for="vrstaPakiranja">Odaberi pakiranje:</label>
+                                    <select class="form-entry" id="vrstaPakiranja" multiple="multiple" size="3">
+                                        <option value="0">Vrećice</option>
+                                        <option value="1">Instant čaj</option>
+                                        <option value="2">Lišće</option>
+                                        <option value="3">Piramide</option>
+                                        <option value="4">U boci</option>
+                                        <option value="5">U limenci</option>
+                                        <option value="6">Kompresirani</option>
+                                    </select>
+                                </div>                       
+                            </fieldset>
+                            <div class="row">
+                                <div class="button-container">
+                                    <button class="form-button" type="submit">Pošalji obrazac</button>
+                                </div>      
+                            </div>
+                               
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">
+                <div>
+                    <p>Patrik Noah Šikač</p>
+                    <p>&copy;2020</p>
+                    <p><a href="mailto:psikac@foi.hr">psikac@foi.hr</a></p>
+                </div>
+                <div>
+                    <a href="http://validator.w3.org/check?uri=http://barka.foi.hr/WebDiP/2019/zadaca_01/psikac/obrasci/obrazac.html">
+                        <img src="../multimedija/HTML5.png" alt="html5">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://jigsaw.w3.org/css-validator/validator?uri=http://barka.foi.hr/WebDiP/2019/zadaca_01/psikac/obrasci/obrazac.html">
+                        <img src="../multimedija/CSS3.png" alt="css">
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
